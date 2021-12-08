@@ -79,7 +79,7 @@ header{
 .galeria img {
   width: 100%;
 }
-.cards img{
+.card img{
   width: 100%;
 }
 
@@ -110,8 +110,82 @@ table td{
   transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 .column img {
-  width: 30%;
+  width: 100%;
+}
+
+.card {
+  margin: 15px;
+  padding: 10px;
+  border-radius: 8px;
+}
+.card:hover {
+  box-shadow: -1px 6px 10px 2px rgb(0 0 0 / 20%);
+}
+
+.grad {
+  padding: 15px;
+  font-family: "poppins";
+  border: 1px;
+  border-radius: 15px;
+  background-image: linear-gradient(to bottom, red , yellow);
+}
+.grad a {
+  animation-duration: 2s;
+  animation-name: aparecer;
+  animation-iteration-count: 1;
+}
+@keyframes aparecer {
+  0% {
+    opacity: 0;
   }
+  100% {
+    opacity: 1;
+  }
+}
+.grad a {
+  font-size: auto;
+  text-decoration: none;
+  color: white;
+}
+
+/*estilon2 */
+
+.grad2 {
+  padding: 10px;
+  font-family: "poppins";
+  border: 1px;
+  border-radius: 25px;
+  background-image: linear-gradient(to top, red , yellow);
+}
+.grad2 a {
+  animation-duration: 2s;
+  animation-name: aparecer;
+  animation-iteration-count: infinite;
+}
+.grad2 a {
+  font-size: auto;
+  text-decoration: none;
+  color: black;
+}
+
+.button {
+  padding: 10px 20px;
+  font-family: "poppins";
+  border-radius: 20px;
+  background-image: linear-gradient(to left, rgba(225,200,239,1) 21.4%, rgba(163,225,233,1) 57.1% );
+}
+
+.button2 {
+  padding: 10px 20px;
+  font-family: "poppins";
+  border-radius: 20px;
+  background-image: linear-gradient(to top, rgba(225,200,239,1) 21.4%, rgba(163,225,233,1) 57.1% );
+  animation: changeColor 5s linear 0.5s 4 normal forwards running;
+}
+@keyframes changeColor {
+  from { background: rgb(255, 0, 179); }  
+  to { background: rgb(172, 143, 253); }
+}
 
 .row {
   display: flex;
