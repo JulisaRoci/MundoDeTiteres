@@ -1,0 +1,142 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+@font-face {
+  font-family: "HelloCalanthe";
+  src: url("Fonts/HelloCalanthe.ttf");
+}
+@font-face {
+  font-family: "PeachyMochi";
+  src: url("Fonts/PeachyMochi.ttf");
+}
+body{
+
+  font-family: "HelloCalanthe";
+  text-align: center;
+  background-image: url(./img/fondo.png);
+  width: 100%;
+}
+header{
+  padding-top: 24px;
+}
+.julisarojas{
+  width: 80%;
+  max-width: 1000px;
+  background-color: rgb(255 255 255 / 22%);
+  margin: 0 auto;
+  margin-top: 24px;
+  backdrop-filter: blur(12px);
+}
+.navegacion{
+  /* ancho */
+  width: 100%;
+  margin: 30px auto;
+  background: pink;
+}
+.navegacion ul{
+  list-style: none;
+}
+/* llamada al hijo */
+.menu > li {
+  /* position: relative; */
+  display: inline-block;
+}
+.menu > li > a{
+  display: block;
+  padding: 15px 20px;
+  color:black;
+  text-decoration: none;
+}
+.menu li a:hover{
+  background-color:beige;
+}
+/* submenu */
+.submenu{
+  position: absolute;
+  display: none;
+}
+.submenu li a{
+  display: block;
+  text-decoration: none;
+}
+.menu li:hover .submenu{
+  display: block;
+}
+.galeria{
+  margin: 80px;
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  grid-column-gap: 50px;
+
+  grid-template-rows: repeat(2, 2fr);
+  grid-row-gap: 50px;
+}
+.galeria div a {
+  text-decoration: none;
+  color: black
+}
+.galeria img {
+  width: 100%;
+}
+.cards img{
+  width: 100%;
+}
+
+table th {
+  border: 1px solid black;
+}
+table td{
+  margin: 0 auto;
+  border: 1px solid black;
+}
+.tablacarrito {
+  margin: 0 auto;
+}
+
+.form-control {
+  display: block;
+  width: 50%;
+  height: calc(1.5em + .75rem + 2px);
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.column img {
+  width: 30%;
+  }
+
+.row {
+  display: flex;
+  padding: 5px;
+  flex-wrap: wrap;
+}
+.column {
+  flex: 25%;
+}
+@media  (max-width: 800px){
+  .column img{
+    width: 50%;
+  }
+}
+@media  (max-width: 600px){
+  .column{
+    flex: 100%;
+  }
+.column img {
+  width: 100%;
+  }
+}
+
+/* .b1{ 
+  width: 960px;
+  margin: 0 auto;
+  background-color: red;
+}*/

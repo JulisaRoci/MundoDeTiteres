@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="shortcut icon" href="../img/favicon_io/favicon.ico" type="image/x-icon">
+
+    <title>Formulario</title>
+</head>
+<body>
+    
+        <a href = "../index.html"> 
+            <img src="../img/FotoGrupal.jpeg" height=" 80 px">
+        </a>
+
+        <h3>Mundo de Títeres</h3>
+
+        <!-- formulario -->
+        <header>
+
+            <nav class="navegacion">
+                <ul class="menu">
+                    <li> <a href= "../index.html">Inicio</a></li>
+                    <li> <a href= "productos.html">Productos</a></li>
+                    <li> <a href= "nosotros.html">Nosotros</a></li>
+                    <li> <a href= "contacto.html">Contacto</a></li>
+                    <li><a href="carrito.html">Mi carrito</a></li>
+                </ul>
+            </nav>
+
+        </header>
+
+    <div class="julisarojas">
+
+        <h2>Contáctanos</h2>
+
+        <form action="" method="">
+
+            <div class="form-group">
+
+                <label for="nombre">Ingrese su nombre</label>
+                <input class="form-control" type="text" name="nombre" placeholder="escribe tu nombre" 
+                required>
+
+                <br>
+
+                <label for="apellido">Apellido</label>
+                <input class="form-control" type="text" name="apellido" placeholder="escribe tu apellido" 
+                required> 
+
+                <br>
+
+                <label for="mail">Email</label>
+                <input class="form-control" type="email" name="mail" placeholder="usuario@gmail.com" 
+                required>
+
+                <br>
+
+                <label for="sexo">Género:</label>
+                <label for="">Hombre</label>
+                <input type="radio" name="genero" value="hombre" >
+                <label for="">Mujer</label>
+                <input type="radio" name="genero" value="mujer">
+
+
+                <label for="">Estado  civil</label>
+                <select id="select" name="select">
+                    <option>Soltero/a</option>
+                    <option>Casado/a</option>
+                    <option>Viudo/a</option>
+                </select>
+
+                <label for="">Escribenos tu mensaje</label>
+                <textarea class="form-control" name="mensaje" rows="3" ></textarea>
+
+
+                <label for="checkbox">¿Desea recibir nuestro Newlestter?</label>
+                <input type="checkbox"  name= "checkbox" id= "">
+
+                <input type="submit" value="Limpiar formulario">
+                <input type="submit" value="Enviar formulario">
+            </div> 
+        </form>
+
+    </div>
+    <footer>
+        <a href="">Facebook</a>
+        <a href="https://api.whatsapp.com/send/?phone=51918233927&text&app_absent=0">Whatsapp</a>
+     </footer>
+     
+</body>
+</html>

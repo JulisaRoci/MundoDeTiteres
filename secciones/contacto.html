@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="shortcut icon" href="../img/favicon_io/favicon.ico" type="image/x-icon">
+
+    <title>Formulario</title>
+</head>
+<body>
+    
+        <a href = "../index.html"> 
+            <img src="../img/FotoGrupal.jpeg" height=" 80 px">
+        </a>
+
+        <h3>Mundo de Títeres</h3>
+
+        <!-- formulario -->
+        <header>
+
+            <nav class="navegacion">
+                <ul class="menu">
+                    <li> <a href= "../index.html">Inicio</a></li>
+                    <li> <a href= "productos.html">Productos</a></li>
+                    <li> <a href= "nosotros.html">Nosotros</a></li>
+                    <li> <a href= "contacto.html">Contacto</a></li>
+                    <li><a href="carrito.html">Mi carrito</a></li>
+                </ul>
+            </nav>
+
+        </header>
+
+    <div class="julisarojas">
+
+        <h2>Contáctanos</h2>
+
+        <form action="" method="">
+
+            <label for="nombre">Ingrese su nombre</label>
+            <input type="text" name="nombre" placeholder="escribe tu nombre" 
+            required > 
+            <br><br>
+
+            <label for="apellido">Apellido</label>
+            <input type="text" name="apellido" placeholder="escribe tu apellido" 
+            required > 
+            <br><br>
+
+            <label for="mail">Email</label>
+            <input type="email" name="mail" placeholder="usuario@gmail.com" 
+            required >
+            <br><br>
+
+            <div>Sexo</div>
+            <label for="sexo">Mujer</label>
+            <input type="radio" name="sexo" value="mujer" >
+
+            <label for="sexo">Hombre</label>
+            <input type="radio" name="sexo" value="hombre">
+
+            <select id="select" name="select">
+                <option>Soltero/a</option>
+                <option>Casado/a</option>
+                <option>Viudo/a</option>
+            </select>
+            <br><br>
+            
+            <!-- No se cual de los 2 checkbox es el correcto, me ayude de youtube -->
+            <span>¿Desea recibir nuestro Newlestter?</span>
+            <input type="checkbox">
+            <br><br>
+
+            <label for="checkbox">¿Desea recibir nuestro Newlestter?</label>
+            <input type="checkbox"  name= "checkbox" id= "">
+            <br><br>
+
+            <textarea name="mensaje" placeholder="Escriba aquí su mensaje"></textarea>
+            <br><br>
+
+            <input type="submit" value="Limpiar formulario">
+            <input type="submit" value="Enviar formulario">
+
+        </form>
+        <br><br>
+    </div>
+    <footer>
+        <a href="">Facebook</a>
+        <a href="https://api.whatsapp.com/send/?phone=51918233927&text&app_absent=0">Whatsapp</a>
+     </footer>
+     
+</body>
+</html>
